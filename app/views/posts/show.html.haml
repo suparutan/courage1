@@ -1,0 +1,10 @@
+.contents.row
+  - @posts.each do |u|
+    .content_post{style: "background-image: url(#{u.image});"}
+      = simple_format(u.talk)
+      %span.name
+        = u.name
+    .aaaa
+      ああああ
+      =link_to'あああ', new_post_path
+
