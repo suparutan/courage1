@@ -2,14 +2,19 @@
   =render"header"
 .body
   .body_field
-    = form_with(model: @posts, local: true) do |form|
+    = form_with(model: @post, local: true) do |form|
       %h3
         登録する
       = form.text_field :name, placeholder: "お名前",class:"name"
       = form.text_field :birth_day, placeholder: "生年月日",class:"birth"
       = form.text_field :gender, placeholder: "性別",class:"gender"
-      = form.text_field :image, placeholder: "施術画像"
+      = form.text_field :address, placeholder: "住所" 
+      = form.text_field :phone_num, placeholder: "電話番号" 
+      = form.text_field :mail_address, placeholder: "メールアドレス" 
       = form.text_field :visit_day, placeholder: "来店日"
+      = form.text_field :menu, placeholder: "メニュー"
+      = form.text_field :image, placeholder: "施術画像"
       = form.text_area :text, placeholder: "施術内容" , rows: "10"
+      = form.text_area :talk, placeholder: "会話内容" , rows: "10"
       = form.submit "SEND"
   
