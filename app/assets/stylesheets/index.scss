@@ -1,0 +1,27 @@
+
+.wrapper{
+display: flex;
+height: 100%;
+  .index{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 50px;
+  }
+  .right_box{
+    height:100%;
+    width: 80%;
+    background-color:blue;
+    &_bar{
+      background-color: red;
+      padding-left: 30px;
+      &_name{
+        display:flex;
+        justify-content:space-evenly;
+        margin-top: 10px;
+      border-bottom: solid 1px black;
+      }
+    }
+  }
+}
