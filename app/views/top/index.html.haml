@@ -1,7 +1,11 @@
 .header
   =render "posts/header"
+  
 .wrapper
-  .index
-    = link_to'一覧を見る', posts_path,class:'all'
-    = link_to'登録する',new_post_path, class:'register'
-    = link_to'検索する','#'
+  -if user_signed_in?
+    .index
+      = link_to'一覧を見る', posts_path,class:'all'
+      = link_to'登録する',new_post_path, class:'register'
+      = link_to'検索する','#'
+  - else
+    .index
