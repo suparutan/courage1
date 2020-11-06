@@ -6,6 +6,12 @@
     .index
       = link_to'一覧を見る', posts_path,class:'all'
       = link_to'登録する',new_post_path, class:'register'
-      = link_to'検索する','#'
+      = link_to'検索する↓',search_posts_path, class:'register'
+      .search
+        = form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form|
+          = form.text_field :keyword, placeholder: "", :size=>"100",class: "search-input"
+          = form.submit "検索",:size=>"1000" ,class: "search-btn"
+      
+
   - else
     .index

@@ -7,7 +7,7 @@
         登録する
       = form.text_field :name, placeholder: "お名前",class:"name"
       = form.text_field :birth_day, placeholder: "生年月日",class:"birth"
-      = form.text_field :gender, placeholder: "性別",class:"gender"
+      = form.collection_select :gender_id, ::Gender.all, :id, :name,  prompt: "選択してください",class:"gender"
       = form.text_field :address, placeholder: "住所" 
       = form.text_field :phone_num, placeholder: "電話番号" 
       = form.text_field :mail_address, placeholder: "メールアドレス" 
