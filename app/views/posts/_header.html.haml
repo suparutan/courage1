@@ -2,7 +2,14 @@
   %header.header
     .header__bar.row
       =link_to'/'do
-        =image_tag '/assets/aa.png',size:"140x41",alt:"ロゴ"
+        =image_tag '/assets/aa.png',size:"140x41",alt:"ロゴ",class:'img'
+    - if user_signed_in?
+      .header__bar.row_a
+        = link_to "ログアウト", destroy_user_session_path, method: :delete,class:'logout'
+    - else
+      .header__bar.row_a
+        = link_to "ログイン", new_user_session_path, class: 'post'
+        = link_to "新規登録", new_user_registration_path, class: 'post'
     
 
 

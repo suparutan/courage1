@@ -133,8 +133,12 @@ header.header {
   right: 0;
   z-index: 5;
   height: 62px;
-  div.header__bar.row {
+  .header__bar.row {
     position: relative;
+    &_a{
+    text-align: right;
+    padding-right: 20px;
+    }
     h1.grid-6 {
       font-size: 20px;
       line-height: 41px;
@@ -143,7 +147,7 @@ header.header {
         display: block;
       }
     }
-    div.grid-6 {
+    .grid-6 {
       float: right;
       text-align: right;
       a.post {
@@ -232,24 +236,6 @@ div.contents.row {
   div.content_post {
     @include boxBase(20px 0 ,30px);
     position: relative;
-    // height: 400px;
-    // color: #fff;
-    // background-size: cover;
-    // background-position: center center;
-    // border-radius: 3px;
-    // // box-shadow: 0 0 10px rgba($black,0.2);
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   right: 0;
-    //   @include filter-gradient(#000000, #a60000, vertical);
-    //   @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.85) 100%));
-    //   z-index: 1;
-    //   border-radius: 3px;
-    // }
     .more {
       position: absolute;
       cursor: pointer;
@@ -378,10 +364,10 @@ footer {
     text-align: center;
   }
 }
-
+// 検索フォーム
 .search-form {
-  text-align: center;
-  padding-top: 32px;
+  // text-align: center;
+
   .search-input {
     width: 30%;
     margin-right: 10px;
