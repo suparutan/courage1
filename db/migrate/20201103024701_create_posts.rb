@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
 
         t.string :name,              null: false
         t.date :birth_day,              null: false
-        t.string :gender,              null: false
+        t.string :gender_id,              null: false
         t.date :visit_day,              null: false
         t.string :menu,              null: false
         t.text :talk,              null: false
@@ -13,6 +13,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
         t.string :phone_num,              null: false
         t.text :image,              null: false
         t.string :mail_address,              null: false
+        t.text :text,              null: false
         t.timestamps
   
       t.timestamps

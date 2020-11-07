@@ -1,10 +1,51 @@
-.contents.row
-  - @posts.each do |u|
-    .content_post{style: "background-image: url(#{u.image});"}
-      = simple_format(u.talk)
-      %span.name
-        = u.name
-    .aaaa
-      ああああ
-      =link_to'あああ', new_post_path
+.header
+  =render "header"
+.wrapper
+  .right_box_bar
+    .right_box_bar_a
+      お名前：
+    .right_box_bar_a
+      生年月日：
+    .right_box_bar_a
+      性別：
+    .right_box_bar_a
+      住所：
+    .right_box_bar_a
+      電話番号：
+    .right_box_bar_a
+      メールアドレス：
+    .right_box_bar_a
+      来店日：
+    .right_box_bar_a
+      メニュー：
+    .right_box_bar_a
+      施術画像：
+    .right_box_bar_a 
+      施術内容：
+    .right_box_bar_a
+      会話内容：
+
+  .left_box_bar
+    .left_box_bar_a
+      =@post.name
+    .left_box_bar_a
+      =@post.birth_day
+    .left_box_bar_a  
+      =@post.gender_id
+    .left_box_bar_a  
+      =@post.address
+    .left_box_bar_a  
+      =@post.phone_num
+    .left_box_bar_a  
+      =@post.mail_address
+    .left_box_bar_a  
+      =@post.visit_day
+    .left_box_bar_a  
+      =@post.menu
+    .left_box_bar_a  
+      =@post.image
+    .left_box_bar_a  
+      =@post.text
+    .left_box_bar_a  
+      =@post.talk
 

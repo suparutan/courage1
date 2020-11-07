@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
+  # before_action :move_to_index, except: [:index, :show, :search]
+
 def index
-  @posts = Post.all.order("name")
+  @posts = Post.order("name")
 end
 
 def new
@@ -21,8 +23,9 @@ def create
 end
 
 def show
-  @post = Post.find(params[:id])
+  @post=Post.find(params[:id])
 end
+
 
 def edit
 @post = Post.find(params[:id])
@@ -38,10 +41,14 @@ def destroy
   post.destroy
 end
 
+def search
+  @post =Post.search(params[:keyword])
+end
+
 
 private
 def post_params
-  params.require('post').permit(:name,:birth_day,:gender,:visit_day,:menu,:talk,:image,:address,:phone_num,:mail_address)
+  params.require('post').permit(:name,:birth_day,:gender_id,:visit_day,:menu,:talk,:image,:address,:phone_num,:mail_address,:text)
 end
 end
 
