@@ -1,18 +1,9 @@
 .header
   =render "header"
 .wrapper
-  .index
-    = link_to'一覧を見る', class:'all'
-    = link_to'登録する',new_post_path, class:'register'
-    = link_to'検索する','#'
   .right_box
     .right_box_bar
-    -@posts.each do |post|
-      .right_box_bar_name
-        =post.name 
-        -# .right_box_bar_name_select
-        -#   %ul.right_box_bar
-        -#     %li
-        -#       =link_to"削除",post_path(@post.id),method: :delete, class:'destoroy_btn'
-        -#     %li
-        -#       =link_to"編集",edit_post_path(@post.id), class:'edit_btn'
+      -@posts.each do |post|
+        .right_box_bar_name
+        =link_to post.name ,post_path(post.id)
+        

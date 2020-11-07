@@ -1,0 +1,21 @@
+.wrapper{
+height: 100%;
+width: 100%;
+display: flex;
+.right_box_bar{
+  text-align: right;
+.right_box_bar_a{
+  display: flex;
+flex-direction: column;
+padding-top: 15px;
+}
+}
+.left_box_bar{
+  padding-left: 20px;
+    &_a{
+display: flex;
+flex-direction: column;
+padding-top: 15px;
+}
+}
+} 
