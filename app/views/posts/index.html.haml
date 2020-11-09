@@ -2,7 +2,7 @@
   =render "header"
 .wrapper
   .right_box
-    .right_box_bar
+    .right_box_box
       -@posts.each do |post|
         .right_box_bar_name
         =link_to post.name ,post_path(post.id)
