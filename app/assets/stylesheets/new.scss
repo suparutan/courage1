@@ -1,4 +1,16 @@
-.aaaaa_a{
-  background-color:red;
-  
+.body{
+text-align: center;
+&_field{
+  .box{
+    width: 300px;
+  }
+  #post_gender_id{
+    width: 300px;
+    border-radius:  px;
+    font-family: "游ゴシック", "YuGothic";
+  }
+  .field{
+    width: 800px;
+  }
+}
 }

@@ -326,6 +326,7 @@ form {
     font-size: 20px;
     color: $dark;
   }
+  // 新規登録フォーム
   input,textarea {
     width: 100%;
     @include boxBase(5px 0 15px,10px);
@@ -333,6 +334,9 @@ form {
     border-radius: 5px;
     font-family: "游ゴシック", "YuGothic";
   }
+
+
+  
   input[type="submit"] {
     @extend .transition;
     background-color: $accent;

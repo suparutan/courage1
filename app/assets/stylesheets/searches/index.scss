@@ -1,0 +1,30 @@
+.allbox{
+  display: flex;
+
+
+.allbox_left{
+  text-align: right;
+  
+  .leftbox_item{
+    padding-top: 10px;
+  }
+}
+
+.search{
+  &_result{
+    display: flex;
+    flex-direction: column;
+  
+    
+    &_item{
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+}
+.return{
+  text-align: center;
+  padding-top: 100px;
+  font-weight: bold;
+}

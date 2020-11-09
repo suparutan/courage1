@@ -1,6 +1,67 @@
 = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
   = form.text_field :keyword, placeholder: "名前を入力してね", class: "search-input"
   = form.submit "検索", class: "search-btn"
--# .contents.row
--#   - @posts.each do |post|
+.allbox
+  .allbox_left
+    .leftbox_item
+      お名前：
+    .leftbox_item
+      生年月日：
+    .leftbox_item
+      性別：
+    .leftbox_item
+      住所：
+    .leftbox_item
+      電話番号：
+    .leftbox_item
+      メールアドレス：
+    .leftbox_item
+      来店日：
+    .leftbox_item
+      メニュー：
+    .leftbox_item
+      施術画像：
+    .leftbox_item
+      施術内容：
+    .leftbox_item 
+      会話内容：
     
+
+
+  .search
+    - @posts.each do |post|
+      .search_result
+        .search_result_item
+          = post.name
+          %br
+        .search_result_item
+          = post.birth_day
+          %br
+        .search_result_item
+          = post.gender_id
+          %br
+        .search_result_item
+          = post.visit_day
+          %br
+        .search_result_item
+          = post.menu
+          %br
+        .search_result_item
+          = post.talk
+          %br
+        .search_result_item
+          = post.address
+          %br
+        .search_result_item
+          = post.phone_num
+          %br
+        .search_result_item
+          = post.image
+          %br
+        .search_result_item
+          = post.mail_address
+          %br
+        .search_result_item
+          = post.text
+.return
+  =link_to'戻る','/',class:'back_btn'
