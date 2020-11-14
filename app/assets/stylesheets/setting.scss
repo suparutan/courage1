@@ -229,7 +229,7 @@ legend {
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
 button,
 input,
-select,
+
 textarea {
   font-family: inherit;
   /* 1 */
@@ -253,9 +253,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera. */
 button,
-select {
-  text-transform: none;
-}
+
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -412,6 +410,7 @@ embed {
 img {
   display: inline-block;
   vertical-align: middle;
+  width: 25%;
 }
 
 textarea {
@@ -420,7 +419,13 @@ textarea {
 }
 
 select {
-  width: 100%;
+  width: 300px;
+  height: 46px;
+  margin: 5px 0 15px;
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    font-family: "游ゴシック", "YuGothic";
 }
 
 i {
