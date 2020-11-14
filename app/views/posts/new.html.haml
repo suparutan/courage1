@@ -9,7 +9,7 @@
       %br
       = form.text_field :birth_day, placeholder: "生年月日",class:"box"
       %br
-      = form.collection_select :gender_id, ::Gender.all, :id, :name,  prompt: "選択してください",class:"box"
+      = form.collection_select :gender_id, ::Gender.all, :id, :name,  prompt: "選択してください",class:"genderbox"
       %br
       = form.text_field :address, placeholder: "住所" ,class:"box"
       %br
