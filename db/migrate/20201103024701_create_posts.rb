@@ -4,9 +4,9 @@ class CreatePosts < ActiveRecord::Migration[5.2]
 
 
         t.string :name,              null: false
-        t.date :birth_day,              null: false
+        t.string :birth_day,              null: false
         t.string :gender_id,              null: false
-        t.date :visit_day,              null: false
+        t.string :visit_day,              null: false
         t.string :menu,              null: false
         t.text :talk,              null: false
         t.string :address,              null: false
