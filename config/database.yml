@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
-  database: courage_production
-  username: courage
-  password: <%= ENV['COURAGE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  # database: courage_production
+  # username: courage
+  # password: <%= ENV['COURAGE_DATABASE_PASSWORD'] %>
