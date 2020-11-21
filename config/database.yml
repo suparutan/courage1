@@ -52,6 +52,6 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  # database: courage_production
-  # username: courage
-  # password: <%= ENV['COURAGE_DATABASE_PASSWORD'] %>
+  database: db/production.postgresql
+  username: courage
+  password:

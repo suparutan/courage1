@@ -70,3 +70,6 @@ gem 'erb2haml'
 gem 'devise'
 gem'active_hash'
 gem'ancestry'
+group :production do
+  gem'rails_12factor'
+end
