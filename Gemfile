@@ -72,4 +72,5 @@ gem'active_hash'
 gem'ancestry'
 group :production do
   gem'rails_12factor'
+  gem 'mysql2'
 end
