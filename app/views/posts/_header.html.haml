@@ -2,7 +2,7 @@
   %header.header
     .header__bar.row
       =link_to'/'do
-        =image_tag asset_path('aa.png', :width =>'140', :height =>'20', :alt => '画像')
+        -# =image_tag asset_path('aa.png', :width =>'140', :height =>'20', :alt => '画像')
     - if user_signed_in?
       .header__bar.row_a
         = link_to "ログアウト", destroy_user_session_path, method: :delete,class:'logout'

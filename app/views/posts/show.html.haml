@@ -49,3 +49,8 @@
     .left_box_bar_a  
       =@post.talk
 
+
+    .left_box_bar_b
+      =link_to "編集する", edit_post_path(@post.id),class: 'edit_btn'
+      =link_to "削除する",post_path(@post.id), method: :delete,class:'destroy_btn'
+

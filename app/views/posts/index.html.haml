@@ -4,6 +4,7 @@
   .right_box
     .right_box_box
       -@posts.each do |post|
-        .right_box_bar_name
+        .right_box_box_name
         =link_to post.name ,post_path(post.id)
-        
+    .right_box_bar
+      =link_to '戻る',"/"

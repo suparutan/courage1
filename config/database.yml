@@ -14,12 +14,18 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: abcbr900
   socket: /tmp/mysql.sock
 
 development:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8
   database: courage_development
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +55,9 @@ test:
 #
 production:
   <<: *default
-  database: courage_production
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: db/production.postgresql
   username: courage
-  password: <%= ENV['COURAGE_DATABASE_PASSWORD'] %>
+  password: abcbr900
