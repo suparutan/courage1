@@ -20,7 +20,7 @@ default: &default
 development:
   adapter: mysql2
   encoding: utf8
-  database: blog_development
+  database: courage_development
   pool: 5
   username: root
   password:
@@ -60,4 +60,4 @@ production:
   pool: 5
   database: db/production.postgresql
   username: courage
-  password:
+  password: abcbr900

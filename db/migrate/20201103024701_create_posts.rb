@@ -1,8 +1,6 @@
 class CreatePosts < ActiveRecord::Migration[5.2]
   def change
     create_table :posts do |t|
-
-
         t.string :name,              null: false
         t.string :birth_day,              null: false
         t.string :gender_id,              null: false
@@ -16,7 +14,6 @@ class CreatePosts < ActiveRecord::Migration[5.2]
         t.text :text,              null: false
         t.timestamps
   
-      t.timestamps
     end
   end
 end
